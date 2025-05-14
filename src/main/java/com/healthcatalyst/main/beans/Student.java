@@ -9,35 +9,42 @@ public class Student {
     private Address address;
     //private float marks;
 
+    public Student(String name, int rollno, Address address) {
+        this.name = name;
+        this.rollno = rollno;
+        this.address = address;
+    }
+
+
 //    public Student(String name, int rollno) {
 //        this.name = name;
 //        this.rollno = rollno;
 //        //this.marks = marks;
 //    }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getRollno() {
-        return rollno;
-    }
-
-    public void setRollno(int rollno) {
-        this.rollno = rollno;
-    }
-
-    public Address getAdresss() {
-        return address;
-    }
-
-    public void setAdresss(Address adresss) {
-        this.address = adresss;
-    }
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public int getRollno() {
+//        return rollno;
+//    }
+//
+//    public void setRollno(int rollno) {
+//        this.rollno = rollno;
+//    }
+//
+//    public Address getAdresss() {
+//        return address;
+//    }
+//
+//    public void setAdresss(Address adresss) {
+//        this.address = adresss;
+//    }
 
     //    public float getMarks() {
 //        return marks;
