@@ -1,15 +1,19 @@
 package com.healthcatalyst.main.beans;
 
+import org.springframework.stereotype.Component;
+
+
 public class Student {
     private String name;
     private int rollno;
-    private float marks;
+    private Address address;
+    //private float marks;
 
-    public Student(String name, int rollno, float marks) {
-        this.name = name;
-        this.rollno = rollno;
-        this.marks = marks;
-    }
+//    public Student(String name, int rollno) {
+//        this.name = name;
+//        this.rollno = rollno;
+//        //this.marks = marks;
+//    }
 
     public String getName() {
         return name;
@@ -27,17 +31,27 @@ public class Student {
         this.rollno = rollno;
     }
 
-    public float getMarks() {
-        return marks;
+    public Address getAdresss() {
+        return address;
     }
 
-    public void setMarks(float marks) {
-        this.marks = marks;
+    public void setAdresss(Address adresss) {
+        this.address = adresss;
     }
+
+    //    public float getMarks() {
+//        return marks;
+//    }
+//
+//    public void setMarks(float marks) {
+//        this.marks = marks;
+//    }
 
     public void displayStudentDetails() {
         System.out.println("Name: " + name);
         System.out.println("Rollno: " + rollno);
-        System.out.println("Marks: " + marks);
+        //System.out.println("Marks: " + marks);
+        System.out.println("Address: " + address);
     }
+
 }
